@@ -1,0 +1,183 @@
+@colorWhite:#fff;
+@colorBlre:#337ab7;
+
+
+.navbar{
+    margin-bottom: 0px;   
+}
+.navbar-inverse{
+    .navbar-brand{
+        font-size: 18px;
+        color: @colorWhite;
+        i{
+            font-size: 24px;
+        }
+    }
+}
+    
+    
+.navbar-inverse{
+    .navbar-nav{
+            &>li{
+               &>a{
+                    color: @colorWhite;
+                    &:hover{
+                        color: @colorBlre;
+                        text-decoration: underline;
+                    }
+                }
+            }
+    }
+}
+
+//主导航
+.navbar-default{
+     .navbar-nav{
+         &>li{
+             &>a{
+                line-height: 40px;
+                min-width: 80px;
+                font-size: 16px;
+                text-align: center;
+             }
+              &:hover{
+                    background-color: #f0f0f0;
+                }
+         }
+     }
+
+}
+
+//三大特色
+#feature{
+    .row{
+        div{
+            background:url(../../images/feature01.png) no-repeat left center;
+            min-height: 65px;
+            padding-left: 80px;
+            h4{
+                font-weight: bold;
+            }
+        }
+        div:nth-of-type(2){
+            background:url(../../images/feature02.png) no-repeat left center;
+        }
+        div:nth-of-type(3){
+            background:url(../../images/feature03.png) no-repeat left center;
+        }
+    }
+}
+//借款中
+
+.panel{
+    border:transparent; 
+    -webkit-box-shadow:none;
+    box-shadow:none;
+}
+
+#invest{
+        padding-right:0px;
+        padding-left:0px;
+    .panel-default{
+        .panel-body{
+            &>ul{
+                padding: 0px;
+                line-height: 40px;
+                li{
+                    list-style: none;
+                    border-bottom: dashed 1px #eee;
+                    &>a{
+                        color:#555;
+                        &:hover{
+                            color: @colorBlre;
+                            text-decoration: none;
+                        }
+                     span{
+                        margin-left: 180px;
+                    }
+                       
+                    }
+                    
+                }
+            }
+        }
+        
+        .panel-body{
+            padding: 0px;
+            .table{
+                thead{
+                      &>tr:nth-of-type(1) {
+                           &>th{
+                               color: #999;
+                           }
+                        }
+                     
+                     } 
+                }
+            
+                     }
+        .panel-heading{
+            background-color:transparent;
+            display: flex;
+            justify-content:space-between;
+            padding: 0px;
+            
+            h3{
+                font-size: 22px;
+                font-weight: bold;
+                color: @colorBlre;
+                border-bottom: 3px solid @colorBlre;
+                margin-bottom: 0px;
+                padding-bottom: 10px;
+            }
+            &>a{
+                line-height: 55px;  
+            }
+        }
+    }
+}
+
+
+//页尾
+.panel-footer{
+    margin-top: 30px;
+    padding-top: 30px;
+    border:none;
+    .pull-left{
+        &>ul{
+            padding-right: 0px;
+            padding-left: 0px;
+            line-height: 35px;
+            font-size: 14px;
+            li{
+                list-style: none;
+            }
+        }
+    }
+    
+    .pull-right{
+        display: flex;
+        height: 200px;
+        div{
+            margin-right: 40px;
+            &>p{
+                margin-bottom: 30px;
+            }
+            &>a{
+                img{
+                width: 126px;
+                height: 52px;
+            } 
+            }
+          
+        }
+        div:nth-of-type(2){
+            &>a{
+                img{
+                width: 126px;
+                height: 126px;
+            } 
+            }
+        }
+    }
+}
